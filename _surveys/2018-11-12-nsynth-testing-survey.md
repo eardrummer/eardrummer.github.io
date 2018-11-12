@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: survey
 title: "NSynth Sounds Testing Survey"
 date: 2018-11-12
 ---
