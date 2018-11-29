@@ -48,6 +48,12 @@ function assignCenters(){
 	homeX = 780
 	homeY = 0
 
+	aboutX = 20
+	aboutY = 0
+
+	projectX = windowWidth - 40
+	projectY = 0
+
 	create_chainX = createX
 	create_chainY = createY
 
@@ -82,6 +88,20 @@ function draw() {
 	textSize(10)
 	text("HOME", homeX - 15, 20)
 
+	fill(255, 255, 255, 200)
+	arc(0, 0, 150, 100,  0, PI/2)
+	fill(0)
+	textSize(10)
+	text("ABOUT", aboutX - 15, 20)
+
+	fill(255, 255, 255, 200)
+	arc(windowWidth, 0, 150, 100, PI/2, PI)
+	fill(0)
+	textSize(10)
+	text("PROJECTS", projectX - 15, 20)
+
+
+
 	if(mouseIsPressed & mouseIsInside){
 		if(initialMap == 2){
 			create_chainX = mouseX
@@ -101,6 +121,21 @@ function draw() {
 		checkMouseOver();
 	}
 
+	if(mouseIsPressed){
+		if (dist(mouseX, mouseY, aboutX, aboutY) < 50){
+			console.log("ABOUT")
+			link("http://manaswimishra.com/about/", "_blank", "nofollow" )
+		}
+		if (dist(mouseX, mouseY, projectX, projectY) < 50){
+			console.log("PROJECTS")
+			link("http://manaswimishra.com/", "_blank", "nofollow" )
+		}
+	}
+
+}
+
+function link(url, winName, options) {
+  winName && open(url, winName, options) || (location = url);
 }
 
 function display_InitialMap(){
