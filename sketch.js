@@ -90,10 +90,10 @@ function draw() {
 	textSize(30);
 
 	text("Mangalakritya & Sangeet", width/2 + width/20, height/5 + height/8 + height/6);
-	text("DEC 23rd 2019 - Kota, Rajasthan", width/2 + width/4,  height/5 + height/8 + height/6);
+	text("DEC 22nd 2019 - Kota, Rajasthan", width/2 + width/4,  height/5 + height/8 + height/6);
 
 	text("The Wedding", width/2 + width/9, height/5 + height/5 + height/6);
-	text("DEC 24th 2019 - Kota, Rajasthan", width/2 + width/4,  height/5 + height/5 + height/6);
+	text("DEC 23rd 2019 - Kota, Rajasthan", width/2 + width/4,  height/5 + height/5 + height/6);
 
 	text("The Reception - Part 1", width/2 + width/12, height/5 + height/3.5 + height/6);
 	text("DEC 27th 2019 - Mumbai", width/2 + width/4,  height/5 + height/3.5 + height/6);
