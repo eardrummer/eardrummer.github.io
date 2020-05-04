@@ -36,8 +36,9 @@ function draw()
   fill(255, 0, 0);
 
 	var xMapped = map(xpos, 0, windowWidth, windowWidth*0.25, windowWidth * 0.75 )
+	var yMapped = map(ypos, 0, windowHeight, windowHeight*0.25, windowHeight * 0.75 )
   //ellipse(xpos, ypos, 25, 25);
-	ellipse(xMapped, ypos, 25, 25);
+	ellipse(xMapped, yMapped, 25, 25);
   // music
 
 
