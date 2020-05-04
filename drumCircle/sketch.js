@@ -20,6 +20,7 @@ function draw()
   // set background color to white
   background(0);
 
+	rect(windowWidth*0.5,windowHeight*0.5,windowWidth*0.5,windowHeight*0.5);
 
   // add/subract xpos and ypos
   xpos = xpos + x;
@@ -33,7 +34,10 @@ function draw()
 
   // draw ellipse
   fill(255, 0, 0);
-  ellipse(xpos, ypos, 25, 25);
+
+	var xMapped = map(xpos, 0, windowWidth, windowWidth*0.25, windowWidth * 0.75 )
+  //ellipse(xpos, ypos, 25, 25);
+	ellipse(xMapped, ypos, 25, 25);
   // music
 
 
